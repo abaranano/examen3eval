@@ -14,6 +14,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
+		
 		System.out.println(
 				"Este programa lee el nivel de agua de una presa y permite abrir compuertas si tenemos permiso (el nivel es superior a 50) y las compuertas est�n verificadas.");
 
@@ -86,8 +87,13 @@ public class Principal {
 			return false;
 		}
 	}
-	
-	static boolean solicitarPermiso(int nivel) {
+	/**
+	 * @author Ander_Barañano
+	 * @param nivel
+	 * @return boolean
+	 * @apiNote devuelve un booleano verdadero o falso segun el nivel del agua
+	 */
+	public static boolean solicitarPermiso(int nivel) {
 		if (nivel > 50) {
 			return true;
 		}else {
